@@ -9,6 +9,12 @@ Notebooks (in this repo):
 
 > **Tip:** Use **relative paths** (defaults below) instead of hard‑coded absolute paths. The notebooks already expose a few config variables you can edit in the first cell.
 
+
+Clone these repositories next to each other:
+https://github.com/jcbachmann/blending-simulation [github.com]
+https://github.com/jcbachmann/blending-evaluation [github.com]
+The repository directories should be named "BlendingEvaluation" and "BlendingSimulator" for the installation to work.
+
 ---
 
 ## 1) What the objectives/variables mean
@@ -23,10 +29,9 @@ The dataset rows therefore look like:
 ```
 y1, y2, x1, x2, ..., x50, x51, ..., x70
 ```
-
 ---
 
-## 2) Project layout (recommended)
+## 2) Project layout (can be altered as needed)
 You can keep any structure, but these defaults match the notebooks:
 ```
 .
@@ -55,6 +60,11 @@ You can keep any structure, but these defaults match the notebooks:
   source .venv/bin/activate  # Windows: .venv\Scripts\activate
   pip install --upgrade pip
   ```
+
+IMPORTANT: 
+- for 'Model_NSGA-II_pop_eval.ipynb' to work, blendML kernel must be activated
+-for '02_front_reeval_sensitivity.ipynb' to work a virtual env must be activated first
+
 
 ### Install Python packages
 Install requirements (CPU versions are fine):
@@ -165,5 +175,5 @@ A: Reduce the number of fronts/files, or downsample per‑front solutions before
 ---
 
 ## 9) License & citation
-- Internal research code. If you use the BMH simulator or re‑use parts of this pipeline, please credit the original simulator authors as appropriate (jcbachmann/blending-simulation).
+- Internal research code. If you use the BMH simulator or re‑use parts of this pipeline, please credit the original simulator authors as appropriate (github.com/jcbachmann/blending-simulation), (https://github.com/jcbachmann/blending-evaluation#blending-evaluation).
 
